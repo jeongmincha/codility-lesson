@@ -5,6 +5,12 @@ package com.codility.lesson03;
  */
 public class FrogJmp {
     public int solution(int X, int Y, int D) {
-        return 0;
+        int jmp = 0;
+        int distance = X;
+        while (distance < Y) {
+            distance += D;
+            jmp++;
+        }
+        return jmp;
     }
 }
