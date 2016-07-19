@@ -18,7 +18,7 @@ public class TapeEquilibrium {
             diff.add(Math.abs(aSum - bSum));
         }
 
-        return diff.indexOf(Collections.min(diff)) + 1;
+        return Collections.min(diff);
     }
 
     private int sigma(int start, int end, int[] A) {
