@@ -20,7 +20,7 @@ public class TapeEquilibriumTest {
     @Test
     public void solution() throws Exception {
         int[] arr = {3, 1, 2, 4, 3};
-        int answer = 3;
+        int answer = 1;
         assertEquals(answer, tapeEquilibrium.solution(arr));
     }
 
