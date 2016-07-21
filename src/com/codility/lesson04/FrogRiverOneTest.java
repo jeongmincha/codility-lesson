@@ -24,4 +24,17 @@ public class FrogRiverOneTest {
         assertEquals(answer, frogRiverOne.solution(5, arr));
     }
 
+    @Test
+    public void neverAcross() throws Exception {
+        int[] arr = {5, 4, 3, 2, 5, 4};
+        int answer = -1;
+        assertEquals(answer, frogRiverOne.solution(5, arr));
+    }
+
+    @Test
+    public void neverAcrossSingleElement() throws Exception {
+        int[] arr = {5};
+        int answer = -1;
+        assertEquals(answer, frogRiverOne.solution(5, arr));
+    }
 }
