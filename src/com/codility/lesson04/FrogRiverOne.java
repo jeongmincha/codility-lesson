@@ -8,21 +8,28 @@ import java.util.Map;
  */
 public class FrogRiverOne {
     public int solution(int X, int[] A) {
+        boolean accrossFlag = false;
+
         int idx;
-        int count = 0;
+        int leaf_num = 0;
 
         // K = value, V = index
         Map<Integer, Integer> map = new HashMap<>();
 
         for (idx = 0; idx < A.length; idx++) {
             if (!map.containsKey(A[idx])) {
-                map.put(A[idx], ++count);
+                map.put(A[idx], ++leaf_num);
             }
-            if (count == X) {
+            if (leaf_num == X) {
+                accrossFlag = true;
                 break;
             }
         }
 
-        return idx;
+        if (accrossFlag) {
+            return idx;
+        } else {
+            return -1;
+        }
     }
 }
