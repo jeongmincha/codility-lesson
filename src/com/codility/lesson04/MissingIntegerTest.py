@@ -17,5 +17,10 @@ class TestMissingInteger(unittest.TestCase):
         actual = MissingInteger.solution([1,2,-4,-5,3,4,5,7])
         self.assertEqual(expected, actual)
 
+    def test_permutation(self):
+        expected = 501
+        actual = MissingInteger.solution([x for x in range(1, 501)])
+        self.assertEqual(expected, actual)
+
 if __name__ == '__main__':
     unittest.main()
