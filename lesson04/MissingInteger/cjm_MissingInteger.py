@@ -1,3 +1,6 @@
+"""
+Created by JeongMinCha on 2016. 7. 21.
+"""
 def solution(A):
     if len(A) == 1 and A[0] == 1:
         return 2
