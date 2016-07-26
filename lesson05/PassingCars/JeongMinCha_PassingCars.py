@@ -1,5 +1,5 @@
 """
-Created by JeongMinCha on 2016. 7. 21.
+Created by JeongMinCha on 2016. 7. 26.
 """
 def solution(A):
     MAXIMUM = 1000000000
