@@ -1,5 +1,5 @@
 """
-Created by JeongMinCha on 2016. 7. 29.
+Created by JeongMinCha on 2016. 7. 30.
 """
 import unittest
 import JeongMinCha_MaxDoubleSliceSum as MaxDoubleSliceSum
