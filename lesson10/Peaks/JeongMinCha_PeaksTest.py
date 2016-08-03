@@ -15,5 +15,10 @@ class TestPeaks(unittest.TestCase):
         expected = 1
         self.assertEquals(expected, Peaks.solution(A))
 
+    def test_leftmost_peaks(self):
+        A = [1, 3, 1, 3, 1, 3, 1, 2, 3, 4, 5, 6]
+        expected = 1
+        self.assertEquals(expected, Peaks.solution(A))
+
 if __name__ == '__main__':
     unittest.main()
