@@ -1,10 +1,11 @@
 """
 Created by JeongMinCha on 2016. 8. 3.
 """
-import math
+import math, sys
 
 def solution(N):
-    min_perimeter = 1000000000L
+    min_perimeter = sys.maxint
+
     root_N = int(math.sqrt(N))
     for width in range(1, root_N + 1):
         if N % width == 0:
