@@ -4,20 +4,31 @@ Created by JeongMinCha on 2016. 8. 4.
 def solution(A, B):
     pairs = 0
     for idx in range(len(A)):
-        factorA = set(prime_factorization(A[idx]))
-        factorB = set(prime_factorization(B[idx]))
-        if factorA.issubset(factorB) and factorA.issuperset(factorB):
-            pairs +=1
+        if has_same_factors(A[idx], B[idx]):
+            pairs += 1
     return pairs
 
-def prime_factorization(N):
-    factors = []
-    p = 2
-    while p * p <= N:
-        while N % p == 0:
-            factors.append(p)
-            N //= p
-        p += 1
-    if N > 1:
-        factors.append(N)
-    return factors
+def has_same_factors(a, b):
+    g = gcd(a, b)
+
+    while a != 1:
+        a_gcd = gcd(a, g)
+        if a_gcd == 1:
+            break
+        a /= a_gcd
+    else:
+        while b != 1:
+            b_gcd = gcd(b, g)
+            if b_gcd == 1:
+                break
+            b /= b_gcd
+        else:
+            return True
+
+    return False
+
+def gcd(a, b):
+    if a % b == 0:
+        return b
+    else:
+        return gcd(b, a % b)
