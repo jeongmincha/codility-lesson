@@ -2,15 +2,11 @@
 Created by JeongMinCha on 2016. 8. 4.
 """
 def solution(N, M):
-    chocolates = [True] * N
-    chocolates[0] = False
+    lcm = N * M / gcd(N, M)
+    return lcm / M
 
-    num_eating = 1
-    pos = M
-
-    while chocolates[pos%N] == True:
-        chocolates[pos%N] = False
-        pos += M
-        num_eating += 1
-
-    return num_eating
+def gcd(a, b):
+    if a % b == 0:
+        return b
+    else:
+        return gcd(b, a % b)
