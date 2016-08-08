@@ -6,6 +6,7 @@ Created by JeongMinCha on 2016. 8. 9.
 def fibonacciDynamic(n):
     """
     Finding Fibonacci numbers dynamically.
+    The time complexity of this algorithm is O(n).
     :param n: input number n
     :return: fibonacci number of given n
     """
