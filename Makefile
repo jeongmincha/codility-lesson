@@ -36,3 +36,6 @@ JeongMinCha_test:
 	# unittests for lesson 12
 	$(PYTHON) lesson12/ChocolatesByNumbers/JeongMinCha_ChocolatesByNumbersTest.py 
 	$(PYTHON) lesson12/CommonPrimeDivisors/JeongMinCha_CommonPrimeDivisorsTest.py 
+	# unittests for lesson 13
+	$(PYTHON) lesson13/FibFrog/JeongMinCha_FibFrogTest.py
+	$(PYTHON) lesson13/Ladder/JeongMinCha_LadderTest.py
