@@ -39,3 +39,6 @@ JeongMinCha_test:
 	# unittests for lesson 13
 	$(PYTHON) lesson13/FibFrog/JeongMinCha_FibFrogTest.py
 	$(PYTHON) lesson13/Ladder/JeongMinCha_LadderTest.py
+	# unittests for lesson 14
+	$(PYTHON) lesson14/MinMaxDivision/JeongMinCha_MinMaxDivisionTest.py
+	$(PYTHON) lesson14/NailingPlanks/JeongMinCha_NailingPlanksTest.py 
