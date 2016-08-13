@@ -1,4 +1,7 @@
 # Codility Lessons
+
+[![Build Status](https://travis-ci.org/JeongMinCha/codility-lesson.svg?branch=master)](https://travis-ci.org/JeongMinCha/codility-lesson)
+
 This repository contains solutions of the problems on [the codility lesson site](https://codility.com/programmers/lessons/).
 
 
