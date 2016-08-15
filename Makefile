@@ -1,4 +1,4 @@
-PYTHON="python"
+PYTHON="python2.7"
 
 JeongMinCha_test:
 	# unittests for lesson 04
@@ -42,3 +42,8 @@ JeongMinCha_test:
 	# unittests for lesson 14
 	$(PYTHON) lesson14/MinMaxDivision/JeongMinCha_MinMaxDivisionTest.py
 	$(PYTHON) lesson14/NailingPlanks/JeongMinCha_NailingPlanksTest.py 
+	# unittests for lesson 15
+	$(PYTHON) lesson15/AbsDistinct/JeongMinCha_AbsDistinctTest.py 
+	$(PYTHON) lesson15/CountDistinctSlices/JeongMinCha_CountDistinctSlicesTest.py
+	$(PYTHON) lesson15/CountTriangles/JeongMinCha_CountTrianglesTest.py 
+	$(PYTHON) lesson15/MinAbsSumOfTwo/JeongMinCha_MinAbsSumOfTwoTest.py 
