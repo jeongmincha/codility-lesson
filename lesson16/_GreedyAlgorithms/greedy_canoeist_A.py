@@ -9,7 +9,7 @@ def greedyCanoeistA(W, k):
     16.2: Canoeist in O(n) solution.
     :param W: list of weights of canoeists
     :param k: displacement(the maximum load)
-    :return:
+    :return: the minimum number of double canoes
     """
     N = len(W)
     heavist = W[-1]  # The heaviest fatso
