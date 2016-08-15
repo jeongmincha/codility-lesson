@@ -47,3 +47,6 @@ JeongMinCha_test:
 	$(PYTHON) lesson15/CountDistinctSlices/JeongMinCha_CountDistinctSlicesTest.py
 	$(PYTHON) lesson15/CountTriangles/JeongMinCha_CountTrianglesTest.py 
 	$(PYTHON) lesson15/MinAbsSumOfTwo/JeongMinCha_MinAbsSumOfTwoTest.py 
+	# unittests for lesson 16
+	$(PYTHON) lesson16/TieRopes/JeongMinCha_TieRopesTest.py 
+	$(PYTHON) lesson16/MaxNonoverlappingSegments/JeongMinCha_MaxNonoverlappingSegmentsTest.py 
